@@ -17,18 +17,18 @@ declare(strict_types=1);
 namespace Itineris\RedirectPrivateContentToLoginForm;
 
 add_action('template_redirect', function (): void {
-    global $wp_query, $wpdb;
-
     if (! is_404()) {
         return;
     }
 
-    $private = $wpdb->get_row($wp_query->request);
-    if (! is_object($private)) {
+    $wpdb = $GLOBALS['wpdb'];
+    $wp_query = $GLOBALS['wp_query'];
+    $row = $wpdb->get_row($wp_query->request);
+    if (! is_object($row)) {
         return;
     }
 
-    $postStatus = $private->post_status ?? null;
+    $postStatus = $row->post_status ?? null;
     if ('private' !== $postStatus) {
         return;
     }
