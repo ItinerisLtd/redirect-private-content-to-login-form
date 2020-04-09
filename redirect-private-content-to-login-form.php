@@ -3,7 +3,7 @@
  * Plugin Name:         Redirect private page to login form
  * Plugin URI:          https://github.com/itinerisltd/redirect-private-content-to-login-form
  * Description:         Redirect private content to login form
- * Version:             0.1.0
+ * Version:             0.1.1
  * Requires at least:   5.0
  * Requires PHP:        7.2.0
  * Author:              Itineris Limited
