@@ -1,0 +1,42 @@
+{
+    "name": "itinerisltd/redirect-private-content-to-login-form",
+    "type": "wordpress-muplugin",
+    "description": "Redirect private content to login form",
+    "keywords": [
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://github.com/itinerisltd/redirect-private-content-to-login-form/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "dev@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "support": {
+        "email": "dev@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/redirect-private-content-to-login-form/issues",
+        "source": "https://github.com/ItinerisLtd/redirect-private-content-to-login-form"
+    }
+}
